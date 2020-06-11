@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    .container
+        .jumbotron
+            h1.display-4 Hello, my name is Jalpa Patel.
+            p.lead
+                | Hi my name is Jalpa. I enjoy moonlight strolls on the beach and participation dances. More seriously, my friends would describe me as easy going, good listener and a best partner in any crime.  I have learned to grow up with all my hard work and only with the things a person can afford.
+            hr.my-4
+            from
+                .row
+                    .col-6.mb-3
+                        label(for='first-name') First Name
+                        .input-group
+                            input#first-name.form-control(type='text')
+                    .col-6.mb-3
+                        label(for='last-name') Last Name
+                        .input-group
+                            input#last-name.form-control(type='text')
+                    .col-6.mb-3
+                        label(for='email') Email
+                        .input-group
+                            input#email.form-control(type='text')
+                    .col-6.mb-3
+                        label(for='phone') Phone
+                        .input-group
+                            input#phone.form-control(type='text')
+                    .col-12.mb-3
+                        label(for='message') Enter your message here
+                        .input-group
+                            textarea#message.form-control
+            a.btn.btn-primary.btn-lg(href='#' type='submit') Submit
